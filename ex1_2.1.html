@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 2.1</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-weight: 200;
+        }
+
+        button {
+            background-color: black;
+            color: bisque;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem-vindo</h1>
+
+    <button onclick="perguntarNome()">Próximo</button>
+
+    <script>
+        function perguntarNome() {
+            const nome = prompt("Qual é o seu nome?")
+            alert("Olá, " + nome);
+        }
+    </script>
+</body>
+</html>
