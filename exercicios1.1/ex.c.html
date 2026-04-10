@@ -1,0 +1,14 @@
+<!-- Elaborar um programa para uma loja, a qual leia o preço de um produto e informe as opções de pagamento da loja. Calcule e informe o valor para pagamento à vista com 10% de desconto e o valor em 3x. -->
+
+<script>
+  const valor = Number(prompt("Valor total sem desconto:"));
+
+  const desconto = valor * 0.10;
+  const pagamentoAVista = valor - desconto;
+
+  const valorParcelado = valor / 3;
+
+  alert(`O valor à vista com 10% de desconto fica: R$ ${pagamentoAVista.toFixed(2)}`);
+
+  alert(`O valor total parcelado em 3x fica: 3x de R$ ${valorParcelado.toFixed(2)}`);
+</script>
